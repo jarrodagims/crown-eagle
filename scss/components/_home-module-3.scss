@@ -40,7 +40,7 @@
 
     span {
       display: block;
-      font-weight: 300;
+      font-weight: 400;
       @include raleway();
       font-size: 41px;
       color: #999b95;
@@ -49,8 +49,9 @@
   }
 
   h2 {
-    font-size: 27px;
-    margin-bottom: 1em;
+    font-size: 25px;
+    margin-top: 2em;
+    margin-bottom: 2em;
     cursor: pointer;
     cursor: hand;
 
@@ -91,6 +92,10 @@
 
   @include media-breakpoint-down(md) {
     background: none;
+
+    p {
+      line-height: 1.75;
+    }
 
     ul {
       padding-left: 0;

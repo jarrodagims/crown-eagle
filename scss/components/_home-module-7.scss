@@ -20,6 +20,10 @@
     }
 
     @include media-breakpoint-down(md) {
+
+        p {
+            line-height: 1.75;
+        }
         
         .container {
            padding-top: 3em;

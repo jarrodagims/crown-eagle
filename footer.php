@@ -18,17 +18,16 @@
                     </div>
                     <div class="col">
                         <span class="title">Contact</span>
-                        <p>Hit us up on the east side of town! El Paso’s best patio bar.
-                            Crown and Eagle bar and grill at our convenient location.</p>
+                        <p>Hit us up on the east side of town!<br />El Paso’s best patio bar.
+                            <br />Crown and Eagle bar and grill at our <br />convenient location.</p>
                     </div>
                     <div class="col phone-footer">
                         <div>
                             <span class="title">&nbsp;</span>
                             <p>1731 Lee Trevino<br />
                                 El Paso, Texas 79936<br />
-                                <strong>Call Us Today!</strong><br />
-                                <a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>">
-                                    <?php printPhone(); ?></a>
+                                <strong>Call Us Today!</strong>&nbsp;<span class="br-md"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>">
+                                        <?php printPhone(); ?></span></a>
                             </p>
                         </div>
                     </div>
@@ -38,7 +37,7 @@
             <div class="col col-md-2 address-footer">
                 <div><span class="title">OFFICE HOURS</span>
                     <p>Monday - Sunday:<br />
-                        11:00am - 2:00am</p>
+                        <strong>11:00am - 2:00am</strong></p>
                     <img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="32" />
                 </div>
             </div>
@@ -64,9 +63,18 @@ $sm->setColorType('singleColor');
         </div>
     </div>
 </section>
-<section class="footer-nav d-none d-md-flex">
+<section class="footer-nav d-flex d-md-none">
     <div class="container">
-
+        <div class="row">
+            <div class="col">
+                <?php
+$sm = new SocialMedia(array('facebook', 'twitter'));
+$sm->setSize('sm');
+$sm->showNetworkButtons();
+$sm->setColorType('singleColor');
+?>
+            </div>
+        </div>
     </div>
 
 </section>

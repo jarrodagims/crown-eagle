@@ -114,6 +114,7 @@ body #main .container article #sidebar {
     background: none;
     padding: 0;
     width: 100%;
+    margin-top: 3em;
   }
 
   body #main .container {
@@ -212,9 +213,10 @@ body #main .container article #sidebar .green-box p {
       height: 150px;
     }
 
-    img {
+    .sidebar-bottom img {
       height: 55px;
     }
+    
 
     .sidebar-bottom a img {
       height: 12px;

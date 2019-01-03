@@ -34,6 +34,19 @@
             endif;
             the_content();
             ?>
+
+<?php
+            if (get_field('page_bottom', $pageid)) { ?>
+<section class="page-bottom">
+    <div class="row">
+        <div class="col col-xs-12">
+            <?php echo get_field('page_bottom', $pageid); ?>
+        </div>
+    </div>
+</section>
+<?php  }
+            ?>
+
 <div class="banner banner-bottom">
     <?php if (has_post_thumbnail( $post->ID ) ):
                 echo the_post_thumbnail(array(1060,209));
@@ -52,17 +65,6 @@
     <?php
             endif; ?>
 </div>
-<?php
-            if (get_field('page_bottom', $pageid)) { ?>
-<section class="page-bottom">
-    <div class="row">
-        <div class="col col-xs-12">
-            <?php echo get_field('page_bottom', $pageid); ?>
-        </div>
-    </div>
-</section>
-<?php  }
-            ?>
 <div class="content">
     <?php
             if (get_field('page_two', $pageid)) { ?>

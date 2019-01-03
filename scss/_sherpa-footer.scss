@@ -5,6 +5,10 @@
   text-align: center;
   background: #1E1E21;
   color: #fff;
+  
+  strong {
+    font-weight: 700;
+  }
 
   .container-fluid {
     max-width: 1700px;
@@ -94,7 +98,6 @@
   .phone-footer {
     a {
       color: $white;
-      font-weight: 700;
       font-family: 'Lato', sans-serif;
     }
   }
@@ -259,6 +262,7 @@
     line-height: 1.75;
     font-weight: 300;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
   }
 
   ul {
@@ -281,8 +285,8 @@
 
   ul li {
     list-style: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 
     &:first-child {
       margin-left: 0;
@@ -555,6 +559,15 @@
 
   @include media-breakpoint-down(md) {
     text-align: center;
+
+    ul.list-inline {
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0 10px;
+      }
+    }
   }
 }
 

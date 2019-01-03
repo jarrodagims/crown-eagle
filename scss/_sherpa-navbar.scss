@@ -171,6 +171,11 @@
   }
 
   @include media-breakpoint-down(md) {
+
+    .navbar-left {
+      justify-content: space-between;
+    }
+    
     img {
       height: 12px;
       margin-left: auto;

@@ -48,6 +48,7 @@
     @include media-breakpoint-down(md) {
         text-align: center;
 
+
         .col {
             padding-top: 3.5em;
             padding-bottom: 3.5em;
@@ -86,6 +87,7 @@
 
         p {
             font-size: 15px;
+            line-height: 1.75;
         }
     }
 }

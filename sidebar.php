@@ -11,6 +11,7 @@
 </div>
 <?php endif; ?>
 <?php if (!is_page('contact-us')) : ?>
+<?php if (!is_page('weekly-events')) : ?>
 <div class="sidebar-top">
     <img src="<?=IMGURL?>our-grill.svg" alt="Our Grill" />
 </div>
@@ -18,6 +19,7 @@
     <img src="<?=IMGURL?>uber-eats-logo.png" alt="Uber Eats" />
     <a href=""><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="20" /></a>
 </div>
+<?php endif; ?>
 <?php if (!is_page('happy-hour-el-paso')) : ?>
 <div class="sidebar-table">
     <div class="icon-calendar"><span>Daily Schedule</span></div>
