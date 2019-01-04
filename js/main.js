@@ -8,7 +8,7 @@
       $(this).toggleClass("expanded");
     });
 
-    $(".expander").wrapInner("<span></span>");
+    $(".sidebar-content .expander").wrapInner("<span></span>");
 
     $(".waypoint").each(function() {
       var self = $(this);
@@ -48,7 +48,6 @@
       );
 
       function resize() {
-
         if ($(window).width() >= 992) {
           deskFunctions();
         } else if ($(window).width() < 992) {

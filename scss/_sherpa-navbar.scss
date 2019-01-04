@@ -171,11 +171,10 @@
   }
 
   @include media-breakpoint-down(md) {
-
     .navbar-left {
       justify-content: space-between;
     }
-    
+
     img {
       height: 12px;
       margin-left: auto;
@@ -198,14 +197,12 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: .5em 0;
+  padding: 0.5em 0;
 
   @include media-breakpoint-up(md) {
-
     .container {
       max-width: 1770px;
     }
-
 
     &.internal .v-align > div {
       justify-content: flex-start;
@@ -234,17 +231,57 @@
   top: 50%;
   margin-right: 20px;
 
+  @include media-breakpoint-down(md) {
+    margin-right: auto;
+    left: 0;
+  }
+
+  ul.list-inline {
+    display: flex;
+
+    @include media-breakpoint-down(lg) {
+      > li {
+        &::after {
+          border-right: 1px solid #fff;
+          content: "";
+          height: 100%;
+          display: block;
+        }
+
+        &:last-child::after {
+          border: none;
+        }
+      }
+    }
+
+    
+
+    li a {
+      color: #cccccc;
+      margin: 0 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
   li.menu-item {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .social-media {
+      display: flex;
+    }
 
     a {
       float: left;
-
-      span {
-        overflow: hidden;
-        text-indent: -99999px;
-        display: none;
-      }
+      color: $white;
     }
 
     &.directions a {
@@ -259,12 +296,6 @@
       @include svg-contact(_trim($sherpa-brand-primary));
       margin-right: 0;
 
-      @include media-breakpoint-down(md) {
-        font-family: moderno-fb, serif;
-        font-style: italic;
-        font-weight: 700;
-      }
-
       &:hover {
         @include svg-contact(_trim($white));
       }
@@ -273,30 +304,46 @@
     &.directions:after {
       color: #fff;
     }
+
+    @include media-breakpoint-down(lg) {
+
+      span {
+        display: none;
+      }
+    }
   }
 }
 
 .navbar-right li.menu-item.directions {
+
   a {
-    margin: 0 15px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  &::after {
-    content: "";
-    background: $white;
-    height: 15px;
-    width: 1px;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  @include media-breakpoint-down(lg) {
+    &::after {
+      content: "";
+      background: $white;
+      height: 15px;
+      width: 1px;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
 .navbar-right li.menu-item.contact {
   a {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 }
 
@@ -417,17 +464,16 @@
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 
-//   .dropdown-toggle::after {
-//     content: "";
-//     @include svg-arrow($white);
-//     border: 0;
-//     width: 10px;
-//     height: 10px;
-//     display: inline-block;
-//   }
+  //   .dropdown-toggle::after {
+  //     content: "";
+  //     @include svg-arrow($white);
+  //     border: 0;
+  //     width: 10px;
+  //     height: 10px;
+  //     display: inline-block;
+  //   }
 
   .nav-link {
-    
   }
 }
 
@@ -445,12 +491,12 @@
 .dropdown-menu {
   font-size: 13px;
   background: rgba(0, 0, 0, 0.79);
-  
+}
 
-  @include media-breakpoint-up(md) {
-    li:first-child {
-      display: none;
-    }
+@include media-breakpoint-up(md) {
+  .menu-item-114,
+  .menu-item-168 {
+    display: none;
   }
 }
 
@@ -464,7 +510,7 @@
   }
 }
 
-
-.dropdown-item:hover, .dropdown-item:focus {
+.dropdown-item:hover,
+.dropdown-item:focus {
   background: $sherpa-secondary-color;
 }

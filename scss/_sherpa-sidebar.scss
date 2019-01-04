@@ -165,6 +165,10 @@ body #main .container article #sidebar .green-box p {
 .sidebar {
   width: 412px;
 
+  .dropshadow {
+    @include dropshadow();
+  }
+
   .sidebar-top {
     background: url("../img/bg-sidebar-top.jpg") 0 0 no-repeat;
     background-size: cover;
@@ -233,17 +237,16 @@ body #main .container article #sidebar .green-box p {
   // position: absolute;
   
   tbody td.column-1 {
-    text-align: center;
+    text-align: right;
     border-left: 0;
-    padding-bottom: 0;
     padding-top: 13px;
+    color: #CCCCCC;
   }
 
   .tablepress td {
     color: #fff;
     font-family: "acumin-pro-condensed", sans-serif;
     vertical-align: top;
-     padding-bottom: 2em;
     
      span {
       color: #71BF44;

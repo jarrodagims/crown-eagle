@@ -37,27 +37,30 @@
 
                     <h2 class="expander" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
                         aria-controls="collapse">
-                        The best and biggest patio bar in the area!
+                        <span>The best and biggest patio bar in the area!</span>
+                        <ul class="collapse" id="collapse">
+                            <li>The best and biggest patio bar in the area!</li>
+                            <li>We are the top restaurant bar in El Paso where you can catch football games and other
+                                major
+                                sports.</li>
+                            <li>Our bar & grill is highly-reviewed and talked about among local sports fans.</li>
+                            <li>Looking for a local place to chill? Come to El Paso’s newest sports bar.</li>
+                            <li>We are located on the east side of town.</li>
+                            <li>Check out our new and improved <a href="<?=SITEURL?>/menu/">food menu</a>.</li>
+                            <li>We value your reviews. Tell us what’s up!</li>
+                            <li>We work hard to keep a top rating with our frequent guests.</li>
+                            <li>If you’re a sports fan, this is the place to be!</li>
+                            <li>Our quality restaurant menu truly sets us apart from other local bar & grills.</li>
+                            <li>Our patio hosts a variety of live music, including musicians and DJ’s.</li>
+                            <li>We are a local tavern with fine drinks and great people.</li>
+                            <li>Don’t want to go home? Come hang out here — we’re open late!</li>
+                            <li>We offer a quality food menu to satisfy any appetite.</li>
+
+                        </ul>
+
                     </h2>
 
-                    <ul class="collapse" id="collapse">
-                        <li>The best and biggest patio bar in the area!</li>
-                        <li>We are the top restaurant bar in El Paso where you can catch football games and other major
-                            sports.</li>
-                        <li>Our bar & grill is highly-reviewed and talked about among local sports fans.</li>
-                        <li>Looking for a local place to chill? Come to El Paso’s newest sports bar.</li>
-                        <li>We are located on the east side of town.</li>
-                        <li>Check out our new and improved <a href="<?=SITEURL?>/menu/">food menu</a>.</li>
-                        <li>We value your reviews. Tell us what’s up!</li>
-                        <li>We work hard to keep a top rating with our frequent guests.</li>
-                        <li>If you’re a sports fan, this is the place to be!</li>
-                        <li>Our quality restaurant menu truly sets us apart from other local bar & grills.</li>
-                        <li>Our patio hosts a variety of live music, including musicians and DJ’s.</li>
-                        <li>We are a local tavern with fine drinks and great people.</li>
-                        <li>Don’t want to go home? Come hang out here — we’re open late!</li>
-                        <li>We offer a quality food menu to satisfy any appetite.</li>
 
-                    </ul>
 
 
                     <h3>Welcome to Crown and Eagle — Where Everyone is Treated Like Royalty</h3>
@@ -108,8 +111,8 @@
                         <div class="saloon-logo">
                             <img src="<?=IMGURL ?>/saloon-logo.png" alt="Crown & Eagle" />
                         </div>
-                        <h2>happy hour specials and drink specials</h2>
-                        <h3>11 a.m. to 7 p.m.</h3>
+                        <h2>happy hour specials</h2>
+                        <h3>and drink specials 11 a.m. to 7 p.m.</h3>
                     </div>
                 </div>
             </div>

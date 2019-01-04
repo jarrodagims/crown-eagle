@@ -12,18 +12,21 @@
 <?php endif; ?>
 <?php if (!is_page('contact-us')) : ?>
 <?php if (!is_page('weekly-events')) : ?>
-<div class="sidebar-top">
-    <img src="<?=IMGURL?>our-grill.svg" alt="Our Grill" />
-</div>
-<div class="sidebar-bottom">
-    <img src="<?=IMGURL?>uber-eats-logo.png" alt="Uber Eats" />
-    <a href=""><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="20" /></a>
+<div class="dropshadow">
+    <div class="sidebar-top">
+        <img src="<?=IMGURL?>our-grill.svg" alt="Our Grill" />
+    </div>
+    <div class="sidebar-bottom">
+        <img src="<?=IMGURL?>uber-eats-logo.png" alt="Uber Eats" />
+        <a href="https://www.ubereats.com/en-US/el-paso/food-delivery/crown-%26-eagle-bar-and-grill/oU2EF0vtR96l6iExoAApCQ/"
+            target="_blank"><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="20" /></a>
+    </div>
 </div>
 <?php endif; ?>
 <?php if (!is_page('happy-hour-el-paso')) : ?>
 <div class="sidebar-table">
     <div class="icon-calendar"><span>Daily Schedule</span></div>
-    <?php echo do_shortcode('[table id=1 /]'); ?>
+    <?php echo do_shortcode('[table id=2 /]'); ?>
 </div>
 <?php endif; ?>
 <?php if (!is_front_page()) : ?>
@@ -36,8 +39,8 @@
                         <div class="saloon-logo">
                             <img src="<?=IMGURL ?>/saloon-logo.png" alt="Crown & Eagle" />
                         </div>
-                        <h2>happy hour specials and drink specials</h2>
-                        <h3>11 a.m. to 7 p.m.</h3>
+                        <h2>happy hour specials</h2>
+                        <h3>and drink specials 11 a.m. to 7 p.m.</h3>
                     </div>
                 </div>
             </div>

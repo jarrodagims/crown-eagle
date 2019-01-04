@@ -38,7 +38,8 @@
                 <div><span class="title">OFFICE HOURS</span>
                     <p>Monday - Sunday:<br />
                         <strong>11:00am - 2:00am</strong></p>
-                    <img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="32" />
+                    <a href="https://www.ubereats.com/en-US/el-paso/food-delivery/crown-%26-eagle-bar-and-grill/oU2EF0vtR96l6iExoAApCQ/"
+                        target="_blank"><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="32" /></a>
                 </div>
             </div>
             <!-- <div class="d-md-none d-xs-block d-sm-block">

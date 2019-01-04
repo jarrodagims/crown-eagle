@@ -45,8 +45,17 @@
                             <li class="menu-item contact"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><span>Call
                                         Us Today!
                                         <?php printPhone(); ?></span></a></li>
+                            <li class="menu-item">
+                                <?php
+$sm = new SocialMedia(array('facebook', 'twitter'));
+$sm->setSize('sm');
+$sm->showNetworkButtons();
+$sm->setColorType('singleColor');
+?>
+                            </li>
                         </ul>
-                        <a href="/"><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="22" /></a>
+                        <a href="https://www.ubereats.com/en-US/el-paso/food-delivery/crown-%26-eagle-bar-and-grill/oU2EF0vtR96l6iExoAApCQ/"
+                            target="_blank"><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="22" /></a>
 
                     </div>
                     <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
