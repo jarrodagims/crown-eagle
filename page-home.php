@@ -73,7 +73,7 @@
                     </p>
 
                     <p>As a local sports bar & grill with an awesome patio bar, we enjoy giving our customers the
-                        opportunity to let loose, meet new people, enjoy a game, share a good joke, tune out to some
+                        opportunity to let loose, meet new people, enjoy a game, share a good joke, rock out to some
                         great jams, and engage in great conversation.
                     </p>
                 </div>
@@ -163,7 +163,7 @@
             <div class="col col-sm-12 col-xs-12 col-lg-5 offset-lg-1">
                 <h3>A Royally Good Time</h3>
                 <p>Many places call themselves a sports bar because they mount a television on the wall and broadcast
-                    the occasional game or two. But at Crown and Eagle, we believe in taking the experience to another
+                    the occasional game or two. At Crown and Eagle, we believe in taking the experience to another
                     level—whether it’s the boxing match of the year, the Super Bowl, or the NFL playoffs.</p>
 
                 <p>Sports is a great way to bring people together. And we provide the perfect atmosphere!</p>

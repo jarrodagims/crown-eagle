@@ -40,6 +40,13 @@
     font-size: 101px;
     color: #33373f;
 
+    @include media-breakpoint-up(lg) {
+      img {
+        margin-right: -10px;
+        margin-left: -10px;
+      }
+    }
+ 
     span {
       display: block;
       font-weight: 400;
@@ -84,7 +91,7 @@
 
   .sidebar-table {
     position: absolute;
-    width: 412px;
+    width: 380px;
   }
 
   .col-md-5 {

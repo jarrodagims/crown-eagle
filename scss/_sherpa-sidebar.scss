@@ -163,7 +163,8 @@ body #main .container article #sidebar .green-box p {
 
 
 .sidebar {
-  width: 412px;
+  width: 380px;
+  margin-left: auto;
 
   .dropshadow {
     @include dropshadow();
